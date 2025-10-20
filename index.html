@@ -110,8 +110,11 @@ abaixo -->
           >
             <h3 class="font-semibold">{{ p.nome }}</h3>
             <p class="text-slate-600">R$ {{ p.preco.toFixed(2) }}</p>
-            <img :src="p.imagem1" alt="Imagem do caderno" class="w-24 h-24 object-cover mb-2">
-            
+            <img
+              :src="p.imagem1"
+              alt="Imagem do caderno"
+              class="w-24 h-24 object-cover mb-2"
+            />
 
             <button
               class="mt-2 rounded bg-sky-600 px-3 py-1 text-white hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-400"
@@ -150,6 +153,11 @@ carrinho"
               Remover
             </button>
           </li>
+
+          <p class="mt-2">
+            Valor total:
+            <strong class="text-sky-700">{{ valorTotal.toFixed(2) }}</strong>
+          </p>
         </ul>
       </section>
     </main>
