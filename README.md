@@ -1,1 +1,1 @@
-https://valmirdev.github.io/pwa-projeto-extensao/
+https://valmirdev.github.io/projeto-extensao/
