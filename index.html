@@ -28,19 +28,15 @@
     >
       Ir para o conteúdo principal
     </a>
-    <header class="max-w-5xl mx-auto px-4 py-6">
-      <h1 class="text-3xl font-bold text-sky-600">
-        Projeto de Extensão — Entidade X
-      </h1>
-      <p class="mt-1 text-slate-600">
-        Site acessível, responsivo e instalável (PWA).
-      </p>
+    <header class="bg-black text-white p-6">
+      <h1 class="text-3xl font-bold">Fábrica de sonhos</h1>
     </header>
+
     <main id="app" class="max-w-5xl mx-auto px-4 pb-24">
       <!-- Navegação responsiva -->
       <nav class="mt-4" aria-label="Navegação principal">
         <button
-          class="md:hidden inline-flex items-center gap-2 rounded bg-sky-600 px-3 py-2 text-white focus:outline-none focus:ring-2 focus:ring-sky-400"
+          class="md:hidden inline-flex items-center gap-2 rounded bg-black px-3 py-2 text-white focus:outline-none focus:ring-2 focus:ring-sky-400"
           @click="menuAberto = !menuAberto"
           :aria-expanded="menuAberto.toString()"
           aria-controls="menu-principal"
@@ -79,15 +75,15 @@
       <section
         id="inicio"
         aria-labelledby="sec-intro"
-        class="bg-white rounded-xl shadow p-6 mt-6"
-      >
-        <h2 id="sec-intro" class="text-xl font-semibold">Boas-vindas</h2>
-        <p class="mt-2">
-          Contador: <strong class="text-sky-700">{{ contador }}</strong>
+        class="bg-gray-900 rounded-xl shadow p-6 mt-6"
+      >  <img src="/img/banner2.jpg" alt="Foto da escola" class="rounded-lg shadow mt4">
+        <h2 id="sec-intro" class="text-white font-semibold">Bem-vindo</h2>
+        <p class="text-white mt-2">
+          Contador: <strong class="text-white">{{ contador }}</strong>
         </p>
 
         <button
-          class="mt-4 inline-flex items-center gap-2 rounded-lg bg-sky-600 px-4 py-2 text-white hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-400"
+          class="mt-4 inline-flex items-center gap-2 rounded-lg bg-yellow-300 px-4 py-2 text-black-900 hover:bg-yellow-500 focus:outline-none focus:ring-2 focus:ring-sky-400"
           aria-label="Somar um ao contador"
           @click="contador++"
         >
@@ -117,7 +113,7 @@ abaixo -->
             />
 
             <button
-              class="mt-2 rounded bg-sky-600 px-3 py-1 text-white hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-400"
+              class="mt-2 rounded bg-yellow-300 px-3 py-1 text-black-900 hover:bg-yellow-500 focus:outline-none focus:ring-2 focus:ring-sky-400"
               @click="adicionarCarrinho(p)"
               aria-label="Adicionar ao
 carrinho"
@@ -135,7 +131,7 @@ carrinho"
         <h2 id="carrinho" class="text-xl font-semibold">Carrinho</h2>
 
         <p class="mt-2">
-          Itens: <strong class="text-sky-700">{{ carrinho.length }}</strong>
+          Itens: <strong class="text-black">{{ carrinho.length }}</strong>
         </p>
         <ul class="mt-3 space-y-2">
           <li
@@ -156,12 +152,12 @@ carrinho"
 
           <p class="mt-2">
             Valor total:
-            <strong class="text-sky-700">{{ valorTotal.toFixed(2) }}</strong>
+            <strong class="text-black">{{ valorTotal.toFixed(2) }}</strong>
           </p>
         </ul>
       </section>
     </main>
-    <footer class="max-w-5xl mx-auto px-4 py-8 text-sm text-slate-500">
+    <footer class="bg-black mx-auto px-4 py-8 text-sm text-slate-100">
       <p>2025 — Projeto de Extensão Front-end</p>
     </footer>
     <!-- Vue 3 (CDN, produção) -->
